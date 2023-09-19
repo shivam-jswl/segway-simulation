@@ -1,0 +1,4 @@
+Constrained Parts: platform-1, Assem1
+Constrain Name: Coincident4
+Error Details: Unsupported constrain type. A weld joint has been added between the constrained parts.
+---------------------------------------------------------------------------------

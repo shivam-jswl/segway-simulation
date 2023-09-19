@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimMechanicsImportXML version="1.0" xmlns="urn:mathworks:simmechanics:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="08/25/18||23:50:21" using="SimMechanics Link Version 4.2" from="SolidWorks 20.2.0"/>
+<ModelUnits mass="kilogram" length="meter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="Assem1" uid="Assem1" version="227">
+<AssemblyFile name="Assem1.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="base-1" uid="base-1" grounded="true" entityUid="base*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>-2.88898 -0.0478277 -0.0150183</Translation>
+</Transform>
+</Instance>
+<Instance name="platform-2" uid="platform-2" entityUid="platform*:*Default">
+<Transform>
+<Rotation>1 0 0 0 -1 6.98296e-015 0 -6.98296e-015 -1</Rotation>
+<Translation>-0.407933 0.055 -0.0203397</Translation>
+</Transform>
+</Instance>
+<Instance name="wheel-5" uid="wheel-5" entityUid="wheel*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>-0.572933 0.0275 -0.0203397</Translation>
+</Transform>
+</Instance>
+<Instance name="wheel-6" uid="wheel-6" entityUid="wheel*:*Default">
+<Transform>
+<Rotation>-1 0 -6.98296e-015 0 1 0 6.98296e-015 0 -1</Rotation>
+<Translation>-0.242933 0.0275 -0.0203397</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Concentric name="Concentric1">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>platform-2</Uid>
+</InstancePath>
+<Position>-0.165 0.0275 0</Position>
+<Axis>1 0 -2.08167e-016</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>wheel-5</Uid>
+</InstancePath>
+<Position>0.03 0 0</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>platform-2</Uid>
+</InstancePath>
+<Position>-0.165 0.0275 0</Position>
+<Axis>1 0 -2.08167e-016</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>wheel-5</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Tangent name="Tangent4">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>base-1</Uid>
+</InstancePath>
+<Position>0 0.01 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>wheel-5</Uid>
+</InstancePath>
+<Position>0.03 0 0</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Tangent>
+<Concentric name="Concentric2">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>platform-2</Uid>
+</InstancePath>
+<Position>0.165 0.0275 0</Position>
+<Axis>-1 0 2.08167e-016</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>wheel-6</Uid>
+</InstancePath>
+<Position>0.03 0 0</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>platform-2</Uid>
+</InstancePath>
+<Position>0.165 0.0275 0</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>wheel-6</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="base" uid="base*:*Default" version="106">
+<ModelUnits mass="kilogram" length="meter"/>
+<PartFile name="base.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>23.9985</Mass>
+<CenterOfMass>2.43104 0.005 1.46471</CenterOfMass>
+<Inertia>17.9991 67.9957 49.997 0 6.15672e-015 0</Inertia>
+</MassProperties>
+<GeometryFile name="base_Default_sldprt.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="1" g="1" b="1" a="1"/>
+<Diffuse r="1" g="1" b="1" a="1"/>
+<Specular r="1" g="1" b="1" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.5</Shininess>
+</VisualProperties>
+</Part>
+<Part name="platform" uid="platform*:*Default" version="263">
+<ModelUnits mass="kilogram" length="meter"/>
+<PartFile name="platform.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.91444</Mass>
+<CenterOfMass>0 -0.110196 0</CenterOfMass>
+<Inertia>0.0247914 0.00462358 0.028624 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="platform_Default_sldprt.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="0.866667" g="0.909804" b="1" a="1"/>
+<Diffuse r="0.866667" g="0.909804" b="1" a="1"/>
+<Specular r="0.433333" g="0.454902" b="0.5" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.6</Shininess>
+</VisualProperties>
+</Part>
+<Part name="wheel" uid="wheel*:*Default" version="127">
+<ModelUnits mass="kilogram" length="meter"/>
+<PartFile name="wheel.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.38285</Mass>
+<CenterOfMass>0.015 0 0</CenterOfMass>
+<Inertia>0.00079034 0.00042234 0.00042234 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="wheel_Default_sldprt.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="0.294118" g="0.294118" b="0.294118" a="1"/>
+<Diffuse r="0.294118" g="0.294118" b="0.294118" a="1"/>
+<Specular r="0.147059" g="0.147059" b="0.147059" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.8</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimMechanicsImportXML>

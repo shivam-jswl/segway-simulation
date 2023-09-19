@@ -1,0 +1,4 @@
+Constrained Instances: 'platform-1', 'Assem1'
+Constraint Name: Coincident10
+Error Details: Constraint is not supported. The constraint has been exported as unknown constraint.
+---------------------------------------------------------------------------------
